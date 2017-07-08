@@ -1,0 +1,22 @@
+@import '../variables';
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: $secondary-color;
+    
+     ul {
+        list-style-type: none;
+        
+     li {
+         display: inline-block;
+         
+     a {
+          padding: 20px;
+          text-decoration: none;
+          color: $base-link-color;
+         }
+       }
+    }
+}
+   

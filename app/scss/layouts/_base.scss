@@ -1,0 +1,35 @@
+@import '../variables';
+@import '../mixins/mixins';
+
+body {
+    background-color: $body-main-color;
+}
+
+#square {
+    height: 600px;
+    width: 600px;
+    background-color: $secondary-color;
+    position: relative;
+    
+    #circle {
+        background-color: blue;
+        height: 50%;
+        width: 50%;
+        
+        @include border(2px, solid, $base-link-color, 50%);
+         
+        @include center;
+        
+        #inner-square {
+        background-color: red;
+        height: 50%;
+        width: 50%;
+        
+        @include center;
+        }
+    }
+}
+
+h2 {
+    font-size: $header-font-size;
+}
